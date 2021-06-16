@@ -1,0 +1,94 @@
+html {
+  font-family: Avenir, sans-serif;
+  background-color: #F1F3F6;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.content {
+  margin: 20px auto 20px;
+  background-color: white;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.header {
+  padding: 5px 25px;
+}
+
+.iconWithText {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 5%;
+  margin-right: 10px;
+}
+
+.text {
+  border-top: 1.75px solid #F1F3F6;
+  padding: 12px 25px 25px;
+}
+
+a {
+  color: #EF844E;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#addBtn {
+  position: relative;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+
+  cursor: pointer;
+  border: none;
+  margin: 10px auto 20px;
+  height: 55px !important;
+  font-size: 15px;
+  background: none;
+  display: flex;
+}
+
+#addBtn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(239, 132, 78, 1);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+
+#addBtn span {
+  position: relative;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+#addBtn:hover:before {
+  width: 100%;
+}
+
+#addBtn:active {
+  transform: scale(0.96);
+}
